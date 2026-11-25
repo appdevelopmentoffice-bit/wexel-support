@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wexel — Support</title>
+<style>
+/* Wexel support site — mirrors the app's Theme.swift palette. */
+:root {
+  --bg: #0e0d1a;
+  --card: rgba(255,255,255,0.04);
+  --stroke: rgba(255,255,255,0.10);
+  --text: #ffffff;
+  --muted: rgba(255,255,255,0.62);
+  --purple: #8c5cff;
+  --blue: #408cff;
+  --mint: #73f2c7;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0 20px 80px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 680px; margin: 0 auto; }
+header { padding: 56px 0 8px; }
+.logo { font-size: 34px; font-weight: 900; letter-spacing: -0.5px; margin: 0; color: var(--text); }
+.logo .x { color: var(--mint); }
+.tag { color: var(--muted); margin: 4px 0 0; font-size: 17px; }
+nav { margin: 28px 0 40px; display: flex; flex-wrap: wrap; gap: 10px; }
+nav a {
+  color: var(--text); text-decoration: none; font-size: 14px; font-weight: 600;
+  padding: 8px 16px; border-radius: 999px;
+  background: var(--card); border: 1px solid var(--stroke);
+}
+nav a:hover { border-color: var(--purple); }
+nav a[aria-current="page"] {
+  background: linear-gradient(45deg, var(--purple), var(--blue));
+  border-color: transparent;
+}
+h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.3px; margin: 0 0 6px; }
+h2 { font-size: 20px; font-weight: 700; margin: 38px 0 10px; }
+h3 { font-size: 17px; font-weight: 700; margin: 26px 0 6px; }
+p, li { color: var(--muted); }
+strong { color: var(--text); }
+a { color: var(--mint); }
+.updated { color: var(--muted); font-size: 14px; margin: 0 0 32px; }
+.card {
+  background: var(--card); border: 1px solid var(--stroke);
+  border-radius: 20px; padding: 22px 24px; margin: 22px 0;
+}
+.card h3:first-child { margin-top: 0; }
+.mail {
+  display: inline-block; margin-top: 6px; padding: 12px 22px; border-radius: 999px;
+  background: linear-gradient(45deg, var(--purple), var(--blue));
+  color: #fff; text-decoration: none; font-weight: 700;
+}
+footer {
+  margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--stroke);
+  color: var(--muted); font-size: 14px;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="logo">we<span class="x">x</span>el</p>
+  <p class="tag">Point at a price. Converted.</p>
+</header>
+
+<nav>
+  <a href="./" aria-current="page">Support</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Use</a>
+</nav>
+
+<h1>Support</h1>
+<p class="updated">Questions, bugs, or feedback — I read every message.</p>
+
+<div class="card">
+  <h3>Get in touch</h3>
+  <p>Email is the fastest way to reach me. If you're reporting a problem, it helps
+     to include your iPhone model, your iOS version, and what you were pointing
+     the camera at.</p>
+  <a class="mail" href="mailto:wexel.support@gmail.com">wexel.support@gmail.com</a>
+</div>
+
+<h2>Common questions</h2>
+
+<h3>How many scans do I get for free?</h3>
+<p>One camera scan every day, forever — it isn't a trial that expires. A scan
+   covers a whole recognition session, so refining the same price doesn't cost
+   you extra. <strong>Manual entry is always unlimited</strong>, even without a
+   subscription.</p>
+
+<h3>The camera isn't reading a price</h3>
+<p>Center the price inside the scan window and hold steady for a moment. Very
+   glossy tags, handwriting, and unusual fonts can defeat text recognition — tap
+   the keyboard icon to type the amount instead. Wexel handles small raised cents
+   (like 69<sup>95</sup>), thousands separators, and currency symbols
+   automatically.</p>
+
+<h3>A converted amount looks wrong</h3>
+<p>Check the two currency chips at the bottom of the screen — the left one is the
+   currency you're scanning, the right one is your own. Tap either to change it,
+   or tap the arrows between them to swap. Rates are mid-market and will differ
+   from what a bank or exchange bureau actually offers.</p>
+
+<h3>Do rates work offline?</h3>
+<p>Yes. Wexel caches the latest rates on your device and keeps converting without
+   a connection. If the cached rates are more than a day old, an amber warning
+   appears so you know they may have drifted.</p>
+
+<h3>How do I cancel Wexel Pro?</h3>
+<p>Subscriptions are managed by Apple, not by Wexel. On your iPhone open
+   <strong>Settings → your name → Subscriptions</strong>, choose Wexel, then
+   Cancel. Cancel at least 24 hours before the period ends to avoid the next
+   charge. When it lapses, the app returns to the free tier and keeps working.</p>
+
+<h3>I paid before but Pro isn't showing</h3>
+<p>Open the rate pill at the top of the scan screen to reach the About sheet, then
+   tap <strong>Restore Purchases</strong>. Make sure you're signed in with the same
+   Apple Account you originally purchased with.</p>
+
+<h3>What does Wexel collect about me?</h3>
+<p>Nothing. No account, no analytics, no tracking, no ads. Text recognition runs
+   entirely on your iPhone and camera images never leave the device. The
+   <a href="privacy.html">privacy policy</a> has the details.</p>
+
+<h3>Can I turn the sounds off?</h3>
+<p>Yes — open the About sheet from the rate pill and switch off
+   <strong>Sound effects</strong>. Your iPhone's silent switch mutes them too.</p>
+
+<footer>
+  <p>Wexel · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+</footer>
+</div>
+</body>
+</html>
